@@ -1,0 +1,160 @@
+/****************************************************************
+							COLOUR
+****************************************************************/
+
+a, a:visited {
+  color: #333;
+}
+
+body {
+	color: #333;
+	background: #f9f9f9;
+}
+
+nav a, nav a:visited {
+  color: #333;
+}
+
+/*nav a.selected, */nav a:hover {
+  color: #696969;
+}
+
+
+/****************************************************************
+							GENERAL
+****************************************************************/
+
+body, h1, h2, h3, p {
+	margin: 0;
+} 
+
+body {
+	font-size: 1.125em;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6;
+	padding: 4.2em 0;
+ 	border-top: 8px solid #222; 
+}
+
+.wrapper {
+	max-width: 780px;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+/*
+.wrapper:before {
+	position: absolute;
+	top: -31px;
+	left: 45%;
+	z-index: 100;
+	padding: .4em;
+	border-radius: 50%;
+	color: #FFF;
+	background:#2B9BD4;
+	content: "HV";
+	font-size: 1.9em;
+	font-family: 'Lato';
+	font-weight: 100;
+	line-height: 1.3;
+	-webkit-font-smoothing: antialiased;
+}
+*/
+
+a {
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%
+}
+
+/****************************************************************
+							HEADING
+****************************************************************/
+
+.logo {
+  text-align: center;
+  margin: 0;
+}
+
+.title {
+  font-family: 'Droid Serif', sans-serif;
+  margin: 0 0 20px 0;
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 0.8em;
+  padding: 0;
+  position: relative;
+}
+
+
+/****************************************************************
+							NAV
+****************************************************************/
+
+.nav-bar {
+	border-bottom: 1px dashed #ccc;
+}
+
+nav {
+	text-align: center;
+	padding: 0 0 20px 0;
+	/*
+	margin: 20px 0 0;
+	*/
+}
+
+nav ul {
+	padding: 0;
+	list-style: none;
+	margin: 0 10px;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	padding: 15px 10px;
+}
+
+
+/****************************************************************
+							FOOTER
+****************************************************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #333;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+/****************************************************************
+							MAIN CONTENT
+****************************************************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+}
