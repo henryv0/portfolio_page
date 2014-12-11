@@ -13,10 +13,19 @@ body {
 
 nav a, nav a:visited {
   color: #333;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 }
 
-/*nav a.selected, */nav a:hover {
-  color: #696969;
+nav a:hover {
+  color: #fbb546;
+}
+
+nav a.selected {
+  color: #fbb546;
 }
 
 
@@ -37,10 +46,17 @@ body {
 }
 
 .wrapper {
-	max-width: 780px;
+	
+	max-width: 940px;
 	position: relative;
 	margin: 0 auto;
 	padding: 0 5%;
+	
+	/*
+	position: relative;
+	margin: 0 auto;
+	max-width: 58%;
+	*/
 }
 
 /*
@@ -74,13 +90,30 @@ img {
 							HEADING
 ****************************************************************/
 
+.box {
+	margin: auto;
+	width: 150px;
+	height: 150px;
+	background: steelblue;
+	content: "HV";
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition-duration:.5s;
+}
+
+.box:hover {
+	border-radius:50%;
+}
+
 .logo {
   text-align: center;
   margin: 0;
 }
 
 .title {
-  font-family: 'Droid Serif', sans-serif;
+  font-family: 'Droid Serif', Georgia, sans-serif;
   margin: 0 0 20px 0;
   font-size: 1.75em;
   font-weight: 700;
@@ -114,6 +147,7 @@ nav ul {
 
 nav li {
 	display: inline-block;
+	font-family: 'Droid Serif', Georgia, sans-serif;
 }
 
 nav a {
@@ -135,11 +169,22 @@ footer {
 
 footer a {
   text-decoration: none;
+  padding: 0 1px;
+  color: #A8A8A8 !important;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+footer a:hover {
+	color: #333 !important;
 }
 
 
 /****************************************************************
-							MAIN CONTENT
+							PORTFOLIO
 ****************************************************************/
 
 #gallery {
@@ -152,9 +197,56 @@ footer a {
   float: left;
   width: 45%;
   margin: 2.5%;
+  background-color: #f5f5f5;
+
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+#gallery li:hover {
+	background-color: #808080;
 }
 
 #gallery li a p {
   margin: 0;
   padding: 5%;
+  text-align: center;
 }
+
+
+/****************************************************************
+							ABOUT
+****************************************************************/
+
+.profile-photo {
+  display: block;
+  /*display is inline by default; block means you can use auto margin*/
+  max-width: 150px;
+  margin: 30px auto 30px;
+  border-radius: 100%;
+}
+
+.about-page p {
+	text-align: center;
+}
+
+
+
+/****************************************************************
+							MEDIA QUERIES
+****************************************************************/
+
+/*@media screen and (min-width: 480px) {
+	#gallery li {
+		width: 28.3333%;
+	}
+
+	#gallery li:nth-child(4n) {
+		clear: left;
+  	}
+	
+}
+*/
